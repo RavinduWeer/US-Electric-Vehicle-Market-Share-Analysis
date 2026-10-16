@@ -22,7 +22,7 @@ The findings highlight a critical disconnect between total vehicle density and E
 To bypass client-side security restrictions (Error 2068) commonly encountered when bulk-loading data via standard GUI tools, I utilized MySQL's native server-side `Uploads` directory. This approach mirrors enterprise-level secure file staging.
 ```sql
 -- Extracted CSV loaded via secure server path to circumvent LOCAL INFILE restrictions
-LOAD DATA INFILE 'D:/Softwares/MySQL/Uploads/VehicleData_Clean.csv'
+LOAD DATA INFILE '/path/to/secure_uploads/VehicleData_Clean.csv'
 INTO TABLE vehicle_data
 FIELDS TERMINATED BY ',' 
 OPTIONALLY ENCLOSED BY '"'
