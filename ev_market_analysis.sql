@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS vehicle_data (
 );
 
 -- Bulk Ingestion via Secure Server Directory
-LOAD DATA INFILE 'D:/Softwares/MySQL/Uploads/VehicleData_Clean.csv'
+LOAD DATA INFILE '/path/to/secure_uploads/VehicleData_Cleaned.csv'
 INTO TABLE vehicle_data
 FIELDS TERMINATED BY ',' 
 OPTIONALLY ENCLOSED BY '"'
